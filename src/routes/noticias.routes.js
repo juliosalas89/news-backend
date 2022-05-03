@@ -1,4 +1,4 @@
-import {Router} from "express";
+import { Router } from "express";
 import noticiasCTRL from "../controllers/noticias.controllers";
 
 let {listarNoticias, crearNoticia, borrarNoticia, editarNoticia} = noticiasCTRL;

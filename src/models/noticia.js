@@ -7,6 +7,18 @@ let noticiaSchema = new Schema ({
         required: true,
         unique: true
     },
+    descripcion: {
+        type: String,
+        maxlength: 200, 
+        required: true,
+        unique: true
+    },
+    cuerpo: {
+        type: String,
+        maxlength: 200, 
+        required: true,
+        unique: true
+    },
     foto: {
         type: String,
         required: true,
@@ -16,7 +28,15 @@ let noticiaSchema = new Schema ({
         required: true,
         maxlength: 200
     },
-    cuerpo: {
+    categoria: {
+        type: String,
+        required: true
+    },
+    autor: {
+        type: String,
+        required: true
+    },
+    fecha: {
         type: String,
         required: true
     }
