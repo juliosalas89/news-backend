@@ -39,6 +39,10 @@ let noticiaSchema = new Schema ({
     fecha: {
         type: String,
         required: true
+    },
+    destacada: {
+        type: Boolean,
+        required: true
     }
 })
 
