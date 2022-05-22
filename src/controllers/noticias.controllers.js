@@ -23,7 +23,7 @@ noticiasCTRL.crearNoticia = async (req, res) => {
       pieDeFoto,
       categoria,
       autor,
-      fecha,
+      fecha: new Date(fecha),
       destacada
     });
     await noticiaNueva.save();
