@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "proyecto personal de noticias",
   "main": "index.js",
+  "engines": {
+    "node": "16.13.2"
+  },
   "scripts": {
     "start": "babel-node src/index.js",
     "dev": "nodemon --exec npx babel-node src/index.js"
