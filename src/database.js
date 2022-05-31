@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const urlDB = "mongodb://localhost:27017/noticias";
+const urlDB = "mongodb+srv://juliosalas89:jasv3397@cluster0.g3ciq.mongodb.net/test";
 
 mongoose.connect(urlDB, {
   autoIndex: false,
