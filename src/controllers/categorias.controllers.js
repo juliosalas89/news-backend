@@ -4,9 +4,10 @@ let categoriasCTRL = {};
 
 categoriasCTRL.crearCategoria = async (req,res) => {
     try {
-        let {nombre, destacada} = req.body;
+        let {nombre, descripcion, destacada} = req.body;
         let categoriaNueva = new Categoria ({
             nombre,
+            descripcion,
             destacada
         })
         await categoriaNueva.save()

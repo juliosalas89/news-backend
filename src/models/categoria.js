@@ -6,10 +6,15 @@ let categoriaSchema = new Schema ({
         required: true,
         unique: true
     },
+    descripcion: {
+        type: String,
+        required: true
+    },
     destacada: {
         type: Boolean,
         required: true
     }
+
 })
 
 let Categoria = mongoose.model('categoria', categoriaSchema);
